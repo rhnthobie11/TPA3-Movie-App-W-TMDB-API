@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&display=swap');
+
+#position{
+    display: flex;
+    justify-content: flex-between;
+}
+
+.movie-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto'-sans sherif;
+}
+
+.card{
+    text-align: left;
+    justify-content: flex-around;
+    margin: 3rem 7rem;
+}
+
+.card-title{
+    font-weight: 700;
+}
+
+.card-text{
+    font-weight: 500;
+}
