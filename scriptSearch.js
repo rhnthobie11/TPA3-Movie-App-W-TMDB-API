@@ -10,18 +10,22 @@ let getDataMovie = async () => {
     searching.results.forEach(item => {
         keySearch.innerHTML += 
         `
-        <div class="row">
-          <div class="col">
-          <div id="position"
-            <div class="card" style="width: 18rem;">
-                <img src="https://image.tmdb.org/t/p/w500/${item.poster_path}" class="card-img-top" alt="movie-img">
-                <div class="card-body">
-                    <h5 class="card-title">${item.title}</h5>
-                    <p class="card-text">${item.vote_average}</p>
-                    <p>${item.release_date}</p>
+        <div class="col-lg-4 col-sm-6 mb-5">
+            <div class="w-100 d-flex justify-content-center">
+                <div class="position">
+                    <img src="https://image.tmdb.org/t/p/w500/${item.poster_path}" class="card-img-top" alt="movie-img" >
+                    <div class="card-body">
+                        <div class="card-body d-flex justify-content-between flex-column shadow p-2">
+                            <div class="row">
+                                <h5 class="card-title col-9 fs-5 text-wrap overflow-hidden">${item.title}</h5>
+                                <p class="col-3 text-end">${item.vote_average}</p>
+                            </div>
+                            <p class="card-text">${item.release_date}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-          </div>`
+        </div>`
     })
 }
 
